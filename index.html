@@ -1,0 +1,89 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Vamika</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="text">
+            <div class="happy">
+                HAPPY
+            </div>
+            <div class="birthday">
+                BIRTHDAY
+            </div>
+            <div class="vamika">
+                 VAMIKA
+            </div>
+        </div>
+        <div class="picture">
+            <div class="innerpic">
+
+            </div>
+
+        </div>
+        
+        <div class="scrollD">
+            <div class="scroll">Scroll Down</div>
+            <div class="img"><img src="down-arrow_318479.png" alt="down-arrow_318479"></div>
+        
+        </div>
+
+    </div>
+
+    <div class="container2">
+        <div class="envelopeContainer close" id="envelope">
+            <button class="button" id="button" onclick="addClass()">Click Here To Open The Envelope</button>
+            <div class="entext" id="entext">
+               Happy 21st Birthday!! Welcome to the age where you’re legally allowed to do everything.<br><br>
+               Welcome to the age where you’re old enough to know better but young enough to do it anyway.<br><br>
+               Cheers to being officially ‘adult-ish’! <br><br>
+               Enjoy your day , have fun and have a great 21st bday
+            </div>
+        </div>
+        
+        <div class="cake" id="cake">
+            <video controls loop>
+                <source src="t-mem-16.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>        
+        </div>
+        <div class="cakeButton" id="cakeButton">
+            <p>what's a Bday without a cake?Click</p>
+        <button  id="buttoncake" onclick="cakeVideo()">Cake</button>
+        </div>
+        
+        <div class="scrollE" id="scrollE">
+            <div class="scroll">Scroll Down</div>
+            <div class="img"><img src="down-chevron.png" alt="down-arrow_318479"></div>
+        
+        </div>
+       
+    </div>
+
+    <div class="container3">
+        <div class="giftcontainer">
+            <div class="giftText" id="giftText"><p>What've we got in this section?</p>
+            <br>
+            <p>Okay so I've wished you happy birthday and there was also a cake in the previous section and all that's missing now is a tiny present</p>
+            <button onclick="showGift()" id="bdayPresent">Where's my Birthday Present?</button>
+        </div>
+            <div class="giftimg" id="giftimg">
+                <button onclick="openGift()" id="giftButton">Open the gift</button>
+            </div>
+        </div>
+        <div class="present" id="present">
+            <video controls loop>
+                <source src="presentvideo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+              </video>        
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

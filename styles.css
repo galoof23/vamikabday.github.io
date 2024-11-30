@@ -1,0 +1,1724 @@
+html,body {
+    scroll-behavior: smooth;
+    margin: 0;
+    padding: 0;
+    overflow: hidden; 
+    height: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    overflow-y: scroll; 
+    scroll-snap-type: y mandatory;
+    height: 100%;
+}
+body::-webkit-scrollbar {
+    display: none;  
+}
+
+.container{
+    background-color: #E78F81;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 1s ease;
+  
+}
+.container, .container2,.container3 {
+    scroll-snap-align: start; 
+}
+
+.container2{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(pexels-didsss-3045825.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    animation: slideUp 1s ease-out, slideUpFadeIn 2s ease-out;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container3{
+    width: 100vw;
+    height: 100vh;
+    background-image: url(background3.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.giftContainer{
+    position: relative;
+}
+
+.giftimg{
+    width: 65%;
+    height: 85%;
+    border-radius: 50px;
+    /* background-color: #3D0301; */
+    position: absolute;
+    bottom: 10px;
+    right: 300px;
+    background-image: url(gift.png);
+    background-size: 700px 700px;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: none;
+
+}
+.giftText{
+    width: 40%;
+    height: 40%;
+    position: relative;
+    left: 450px;
+    font-size: 24px;
+    text-align: center;
+    color: #6A1E55;
+    font-weight: 900;
+}
+#giftButton{
+ position: absolute;
+ bottom: 200px;
+ left: 775px;
+ padding: 6px;
+ background-color: #ff0000;
+ border-radius: 10px;
+ color: #fff;
+ font-weight: 900;
+ cursor: pointer;
+ display: none;
+ animation: giftanimation 2.5s ease-in-out 0.5s infinite;
+}
+#bdayPresent{
+    width: 340px;
+    height: 60px;
+    border-radius: 10px;
+    font-size: 18px;
+    color:#E78F81;
+    border-color:#CC2B52;
+    background-color: #6A1E55;
+
+}
+
+
+.envelopeContainer{
+      width: 60%;
+      height: 80%;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+      position: absolute;
+}
+.cake{
+      width: 60%;
+      height: 80%;
+      border-radius: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      display: none;
+}
+.present{
+    width: 55%;
+    height: 80%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 130px;
+    display: none;
+}
+
+.present video{
+    width: 100%;
+    height: 100%;
+}
+
+.cake video{
+    width: 100%;
+    height: 100%;
+}
+
+.cakeButton{
+    bottom: 3px;
+    position: absolute;
+    display: flex;
+    width: 455px;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(3px);
+    color:black;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+#buttoncake{
+    width: 80px;
+    padding: 4px 0px 4px 0px;
+    border-radius: 15px;
+    border-color: #3D0301;
+    cursor: pointer;
+    background-color: #CC2B52;
+    font-size: large;
+    font-family: 'Times New Roman', Times, serif;
+    color:white;
+}
+
+
+.close{
+      background-image: url(closed\ envelope.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+}
+
+.open{
+     background-image: url(open\ envelope.jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+}
+
+.entext{
+    width: 400px;
+    height: 400px;
+    font-size: 24px;
+    display: none;
+    color: #CC2B52;
+    font-family:cursive;
+    text-align: center;
+}
+
+.button{
+    border: none;
+    backdrop-filter:blur(10px);
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 16px;
+    font-weight: 900;
+    color:chocolate;
+    margin-top: 455px;
+    margin-left: 125px;
+    cursor: pointer;
+}
+.text{
+    width: 45vw;
+    height: 35vh;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(10px);
+    border-radius: 50px;
+    background-color: transparent;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+
+.happy{
+    font-size: 34px;
+    color: #3D0301;
+    font-weight: bolder;
+    text-align: center;
+    font-family:cursive;
+}
+
+.birthday{
+    font-size: 34px;
+    color: #3D0301;
+    font-weight: bolder;
+    text-align: center;
+    font-family:cursive;
+}
+
+.vamika{
+    font-size: 34px;
+    color: #3D0301;
+    font-weight: bolder;
+    text-align: center;
+    font-family:cursive;
+}
+
+.picture{
+    width: 30vw;
+    height: 65vh;
+    background-color: rgba(255, 255, 255, 0);
+    backdrop-filter: blur(8px);
+    border-radius: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerpic{
+    width: 80%;
+    height: 90%;
+    background-color: #3D0301;
+    border-radius: 60px;
+    animation: pictureAnimation 14s  ease-in infinite;
+    background-image: url(img1);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    object-fit: contain;
+}
+
+.scrollD{
+    position: relative;
+    margin-left: 1350px;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#ff0000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.scrollE{
+    position: relative;
+    margin-left: 1350px;
+    margin-top: 600px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#800000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+    display: none;
+}
+
+.img img{
+    width: 30px;
+    height: 30px;
+    animation: growInOut 1s ease-in  infinite;
+}
+
+@keyframes scaleAnimation {
+    0%{
+      transform: scale(1.5);
+    }
+
+    33%{
+        transform: scale(1.5);
+    }
+
+    100%{
+       transform: scale(2);
+    }
+}
+
+@keyframes giftanimation {
+    from{
+        transform: scale(1);
+    }
+
+    to{
+        transform: scale(1.4);
+    }
+}
+
+@keyframes scaleAndSettle {
+    0%, 100% {
+        transform: scale(1); 
+    }
+    50% {
+        transform: scale(1.5); 
+    }
+}
+
+@keyframes pictureAnimation {
+    0%, 28% { 
+        background-image: url(img1.jpeg);
+    }
+    28%, 56% { 
+        background-image: url(img2.jpeg);
+    }
+    56%, 84% { 
+        background-image: url(img3.jpeg);
+    }
+    84%, 100% { 
+        background-image: url(img4.jpeg);
+    }
+}
+
+@keyframes slideUpFadeIn {
+    0% {
+        transform: translateY(100%);  
+        opacity: 0;                   
+    }
+    100% {
+        transform: translateY(0);     
+        opacity: 1;                   
+    }
+}
+
+@keyframes growInOut {
+    from{
+        transform: translateY(40%);
+    }
+    to{
+        transform: translateY(20%);
+    }
+}
+
+
+
+.happy,
+.birthday,
+.vamika {
+    font-size: 34px;
+    color: #3D0301;
+    font-weight: bolder;
+    text-align: center;
+    font-family: cursive;
+    animation: scaleAndSettle 6s ease-in-out infinite;
+    transform-origin: center;
+    filter: drop-shadow(2px 2px 5px rgba(0, 0, 0, 0.5));
+}
+
+
+
+.happy {
+    animation-delay: 0s;
+}
+
+.birthday {
+    animation-delay: 2s;
+}
+
+.vamika {
+    animation-delay: 4s;
+}
+
+
+@media (max-width : 376px) {
+    .giftText{
+      width: 200px;
+      height: 100px;
+      left: 0px;
+      font-size: 16px;
+      bottom: 70px;
+    }
+    
+    #bdayPresent{
+      width: 170px;
+      height: 60px;
+    }
+
+    .scrollE{
+        color:#3D0301;
+        height: 50px;
+        width: 100px;
+        margin-right: 700px;
+        left: 0;
+        bottom: 0;
+        font-size: 20px;
+     }
+
+    .container3{
+      background-image: url(background3.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+    
+    .giftimg{
+      width: 70%;
+      height: 50%;
+      bottom: 100px;
+      left: 70px;
+      background-image: url(gift.png);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+
+    #giftButton{
+      left: 76px;
+      bottom: 0px;
+      margin-top: 20px;
+    }
+
+    .present{
+        height: 400px;
+        margin-top: 60px;
+    }
+
+    #envelope{
+        width: 95%;
+        height: 70%;
+    }
+    .close{
+        background-image: url(closed\ envelope.jpg);
+        background-size: cover;
+        background-position: -218px;
+    }
+    .open{
+        background-image: url(open\ envelope.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .button{
+        width: 170px;
+        height: 60px;
+        font-size: 12px;
+        margin-bottom: 55px;
+        margin-right: 95px;
+
+    }
+
+    .cakeButton{
+        width: 95%;
+    }
+    .entext{
+        height: 52%;
+        font-size: 12px;
+        width: 50%;
+        font-weight: 500;
+    }
+    .text{
+        width: 65%;
+        height: 50%;
+    }
+    .picture{
+        width: 80%;
+        height: 50%;
+        margin-bottom: 40px;
+    }
+    .scrollD{
+        margin-left: 270px;
+        height: 50px;
+        width: 100px;
+        position: relative;
+        bottom:0px;
+        right: 2px;
+        font-size: 12px;
+    }
+
+    .img img{
+        height: 10px;
+        width: 10px;
+    }
+}
+
+@media (min-width:377px) and (max-width:415px) {
+    .text{
+        width: 73%;
+        height: 43%;
+    }
+
+    .picture{
+        width: 88%;
+        height: 52%;
+        margin-bottom: 40px;
+    }
+
+    .open{
+        background-image: url(open\ envelope.jpg);
+        background-size: 500px 700px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    .close{
+        background-image: url(closed\ envelope.jpg);
+        background-size: cover;
+        background-position: -260px;
+    }
+    #envelope{
+        width: 95%;
+        height: 60%;
+    }
+
+    .button{
+        width: 400px;
+        height: 98px;
+        font-size: 18px;
+        margin-bottom: 25px;
+        margin-right: 95px;
+
+    }
+
+    .cakeButton{
+        width: 95%;;
+    }
+
+    .entext{
+        height: 57%;
+        font-size: 17px;
+        width: 57%;
+        text-align:center;
+        font-weight: 400;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    .giftText{
+        width: 200px;
+        height: 100px;
+        left: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        bottom: 70px;
+      }
+
+      #bdayPresent{
+        width: 200px;
+        height: 60px;
+      }
+
+      .giftimg{
+        width: 70%;
+        height: 50%;
+        bottom: 100px;
+        left: 70px;
+        background-image: url(gift.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      #giftButton{
+        left: 64px;
+        bottom: 0px;
+        width: 165px;
+        font-size: 18px;
+      }
+
+      .present{
+        height: 600px;
+        width: 300px;
+        margin-top: 95px;
+    }
+
+    .scrollD{
+        margin-left: 270px;
+        height: 50px;
+        width: 100px;
+        position: relative;
+        bottom:0px;
+        right: 0px;
+        font-size: 16px;
+    }
+
+    .scrollE{
+        margin-right: 1050px;
+        margin-top: 750px;
+        color: white;
+        height: 50px;
+        width: 100px;
+        font-size: 16px;
+     }
+
+}
+
+@media (min-width: 375px) and (max-width: 400px) and (min-height: 820px) and (max-height: 850px) {
+    .close{
+        background-image: url(closed\ envelope.jpg);
+        background-size: cover;
+        background-position: -250px;
+    }
+
+    #envelope{
+        width: 95%;
+        height: 60%;
+    }
+
+    #giftButton{
+        left: 55px;
+        bottom: 0px;
+        width: 165px;
+        font-size: large;
+      }
+
+      .present{
+        height: 500px;
+        margin-top: 140px;
+    }
+
+    .button{
+        width: 400px;
+        font-size: 18px;
+        margin-bottom: 60px;
+    }
+
+}
+
+@media (min-width: 420px) and (max-width: 440px) and (min-height: 920px) and (max-height: 940px) {
+    .text{
+        width: 63%;
+        height: 42%;
+    }
+
+    .picture{
+        width: 89%;
+        height: 79%;
+    }
+
+    .scrollD{
+        margin-left: 270px;
+        height: 60px;
+        width: 100px;
+        position:relative;
+        bottom:0px;
+        margin-left: 320px;
+        font-size: 16px;
+    }
+
+    #envelope{
+        width: 98%;
+        height: 70%;
+    }
+
+    .close{
+        background-image: url(closed\ envelope.jpg);
+        background-size: cover;
+        background-position: -330px;
+    }
+
+    .button{
+        width: 200px;
+        height: 109px;
+        font-size: 20px;
+        margin-bottom: 0px;
+        margin-right: 95px;
+        margin-top: 540px;
+
+    }
+
+    .open{
+        background-image: url(open\ envelope.jpg);
+        background-size: 840px 840px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .entext{
+        height: 57%;
+        font-size: 21px;
+        width: 74%;
+        text-align:center;
+        font-weight: 400;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+    .cake{
+        width: 70%;
+        height: 50%;
+    }
+    .scrollE{
+        margin-right: 1050px;
+        margin-top: 750px;
+        color: white;
+        height: 50px;
+        width: 100px;
+        font-size: 16px;
+     }
+
+     .giftText{
+        width: 200px;
+        height: 100px;
+        left: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 19px;
+        bottom: 70px;
+      }
+
+      #bdayPresent{
+        width: 200px;
+        height: 60px;
+      }
+
+      .giftimg{
+        width: 70%;
+        height: 50%;
+        bottom: 100px;
+        left: 70px;
+        background-image: url(gift.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      
+      #giftButton{
+        left: 67px;
+        bottom: 0px;
+        width: 170px;
+        font-size: large;
+      }
+
+      .present{
+        height: 600px;
+        width: 300px;
+        margin-top: 95px;
+    }
+
+}
+
+@media (min-width:441px) and (max-width:769px) and (min-height:941px) and (max-height:1025px) {
+    .picture{
+        width: 80%;
+    }
+    .text{
+        width: 65%;
+        height: 40%;
+    }
+    .scrollD{
+        margin-left: 270px;
+        height: 50px;
+        width: 100px;
+        position: relative;
+        bottom:40px;
+        right: 0px;
+        margin-left: 650px;
+        font-size: 16px;
+    }
+
+    #envelope{
+        width: 98%;
+        height: 70%;
+    }
+
+    .button{
+        width: 160px;
+        height: 109px;
+        font-size: 20px;
+        margin-top: 540px;
+
+    }
+
+    .open{
+        background-image: url(open\ envelope.jpg);
+        background-size: 1040px 1040px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .scrollE{
+        margin-right: 650px;
+        margin-top: 900px;
+        color:#3D0301;
+        height: 50px;
+        width: 100px;
+        font-size: 20px;
+     }
+
+
+     .giftText{
+        width: 400px;
+        height: 200px;
+        left: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 26px;
+        bottom: 70px;
+      }
+
+      #bdayPresent{
+        width: 400px;
+        height: 80px;
+        font-size: 27px;
+      }
+      
+
+      .giftimg{
+        width: 70%;
+        height: 70%;
+        bottom: 80px;
+        left: 110px;
+        background-image: url(gift.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+      #giftButton{
+        left: 177px;
+        bottom: 6px;
+        width: 185px;
+        height: 60px;
+        font-size: large;
+      }
+    
+
+      .present{
+        height: 650px;
+        width: 400px;
+        margin-top: 165px;
+    }
+
+    .cakeButton{
+        width: 80%;
+        font-size: 24px;
+    }
+}
+
+@media (min-width:769px) and (max-width:821px) and (min-height: 1025px) and (max-height:1180px){
+    .picture{
+        width: 80%;
+    }
+    .text{
+        width: 65%;
+        height: 30%;
+    }
+
+    .scrollD{
+        margin-left: 270px;
+        height: 50px;
+        width: 140px;
+        position: relative;
+        bottom:0px;
+        right: 0px;
+        margin-left: 650px;
+        font-size: 22px;
+    }
+
+    #envelope{
+        width: 98%;
+        height: 70%;
+    }
+    
+    .button{
+        width: 200px;
+        height: 109px;
+        font-size: 24px;
+        margin-left: 100px;
+        margin-top: 590px;
+
+    }
+
+    .open{
+        background-image: url(open\ envelope.jpg);
+        background-size: 1040px 1040px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .entext{
+        font-size: 24px;
+        font-weight: 800;
+    }
+ 
+    .cakeButton{
+        width: 80%;
+        font-size: 24px;
+    }
+
+    #buttoncake{
+        width: 100px;
+        height: 50px;
+        font-size: 26px;
+        font-weight: 800;
+    }
+    .scrollE{
+        margin-right: 650px;
+        margin-top: 1060px;
+        color:#3D0301;
+        height: 50px;
+        width: 100px;
+        font-size: 20px;
+     }
+
+     
+     .giftText{
+        width: 400px;
+        height: 200px;
+        left: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 26px;
+        bottom: 70px;
+      }
+
+      #bdayPresent{
+        width: 400px;
+        height: 80px;
+        font-size: 27px;
+      }
+      
+      .giftimg{
+        width: 70%;
+        height: 70%;
+        bottom: 80px;
+        left: 110px;
+        background-image: url(gift.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+
+      #giftButton{
+        left: 190px;
+        bottom: 20px;
+        width: 193px;
+        height: 60px;
+        font-size: larger;
+      }
+
+      .present{
+        height: 650px;
+        width: 400px;
+        margin-top: 265px;
+    }
+}
+
+@media (min-width: 1020px) and (max-width: 1030px) and (min-height: 1360px) and (max-height: 1370px) {
+    .picture{
+    width: 80%;
+    height: 55%;
+    }
+
+    .text{
+        width: 65%;
+        height: 30%;
+    }
+
+    .scrollD{
+        height: 50px;
+        width: 240px;
+        position: relative;
+        bottom:10px;
+        right: 0px;
+        margin-left: 820px;
+        font-size: 36px;
+    }
+
+    #envelope{
+        width: 98%;
+        height: 70%;
+    }
+
+    .button{
+        width: 200px;
+        height: 109px;
+        font-size: 24px;
+        margin-left: 170px;
+        margin-top: 690px;
+
+    }
+
+    
+    .cakeButton{
+        width: 90%;
+        font-size: 44px;
+    }
+
+    #buttoncake{
+        width: 100px;
+        height: 50px;
+        font-size: 26px;
+        font-weight: 800;
+    }
+
+    .scrollE{
+        margin-right: 450px;
+        margin-top: 1190px;
+        color:#ff0000;
+        height: 100px;
+        width: 100px;
+        font-size: 36px;
+     }
+
+     .giftText{
+        width: 450px;
+        height: 400px;
+        left: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 36px;
+        bottom: 70px;
+      }
+
+      #bdayPresent{
+        width: 400px;
+        height: 80px;
+        font-size: 27px;
+      }
+
+      .giftimg{
+        width: 70%;
+        height: 70%;
+        bottom: 80px;
+        left: 150px;
+        background-image: url(gift.png);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+      }
+      
+
+      #giftButton{
+        left: 240px;
+        bottom: 30px;
+        width: 243px;
+        height: 60px;
+        font-size: 26px;
+      }
+      
+      .present{
+        height: 850px;
+        width: 600px;
+        margin-top: 265px;
+    }
+
+    .entext{
+        height: 77%;
+        font-size: 35px;
+        width: 47%;
+        margin-top: 110px;
+        text-align:center;
+        font-weight: 600;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+
+}
+
+@media (min-width: 910px) and (max-width: 920px) and (min-height: 1365px) and (max-height: 1375px) {
+    .picture{
+        width: 80%;
+        }
+    
+        .text{
+            width: 65%;
+            height: 30%;
+        }
+    
+        .scrollD{
+            height: 70px;
+            width: 240px;
+            position: relative;
+            bottom:10px;
+            right: 0px;
+            margin-left: 700px;
+            font-size: 36px;
+        }
+
+        #envelope{
+            width: 98%;
+            height: 70%;
+        }
+    
+        .button{
+            width: 200px;
+            height: 109px;
+            font-size: 24px;
+            margin-left: 170px;
+            margin-top: 690px;
+    
+        }
+    
+        
+        .cakeButton{
+            width: 90%;
+            font-size: 34px;
+        }
+
+        .entext{
+            height: 77%;
+            font-size: 32px;
+            width: 47%;
+            margin-top: 124px;
+            text-align:center;
+            font-weight: 600;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        #buttoncake{
+            width: 100px;
+            height: 50px;
+            font-size: 26px;
+            font-weight: 800;
+        }
+    
+        .scrollE{
+            margin-right: 550px;
+            margin-top: 1190px;
+            color:#ff0000;
+            height: 100px;
+            width: 100px;
+            font-size: 36px;
+         }
+
+         .giftText{
+            width: 450px;
+            height: 400px;
+            left: 0px;
+            font-family:Arial, Helvetica, sans-serif;
+            font-size: 36px;
+            bottom: 70px;
+          }
+
+          #bdayPresent{
+            width: 400px;
+            height: 80px;
+            font-size: 27px;
+          }
+
+          .giftimg{
+            width: 70%;
+            height: 70%;
+            bottom: 80px;
+            left: 150px;
+            background-image: url(gift.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+          }
+          
+    
+          #giftButton{
+            left: 207px;
+            bottom: 30px;
+            width: 243px;
+            height: 60px;
+            font-size: 26px;
+          }
+          
+
+          .present{
+            height: 850px;
+            width: 600px;
+            margin-top: 265px;
+        }
+    
+}
+
+@media (min-width: 240px) and (max-width: 360px) and (min-height:500px) and (max-height: 640px) {
+    .picture{
+        width: 90%;
+    }
+    .text{
+        width: 75%;
+        height: 50%;
+    }
+
+    .scrollD{
+        margin-right: 20px;
+        width: 100px;
+        height: 50px;
+        font-size: 13px;
+        bottom: 0px;
+    }
+
+    #envelope{
+        width: 94%;
+        height: 70%;
+    }
+
+ 
+    .button{
+        margin-left: 100px;
+    }
+
+    .open{
+        background-image: url(open\ envelope.jpg);
+        background-size: 540px 540px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .entext{
+        height: 57%;
+        font-size: 14px;
+        width: 77%;
+        margin-top: 10px;
+        text-align:center;
+        font-weight: 300;
+        font-family:Arial, Helvetica, sans-serif;
+    }
+    
+    .scrollE{
+        margin-right: 1100px;
+        margin-bottom: 80px;
+        font-size: 16px;
+        color: #fff;
+     }
+
+     .cake{
+            height: 350px;
+            width: 300px;
+     }
+
+     #giftButton{
+        left: 86px;
+      }
+      
+      .present{
+        height: 350px;
+        width: 300px;
+ }
+  
+}
+
+@media (min-width: 360px) and (max-width:376px) and (max-height : 610px){
+   .button{
+    margin-left: 60px;
+   } 
+
+   .scrollD{
+    bottom: 10px;
+   }
+   
+   .present{
+    height: 350px;
+    width:300px;
+    margin-top: 65px;
+   }
+
+   .scrollE{
+    margin-right: 1050px;
+    bottom: 50px;
+    font-size: 14px;
+    color: white;
+   }
+  
+} 
+
+@media (min-width:410px) and (max-width : 415px) and (max-height:610px){
+   .picture{
+    height: 80%;
+   }   
+
+   .scrollD{
+    font-size: 16px;
+    margin-left: 320px;
+    bottom: 12px;
+   }
+
+   .scrollD img{
+    width: 20px;
+    height: 20px;
+   }
+
+   .scrollE{
+    margin-right: 1000px;
+    margin-bottom: 270px;
+   }
+
+   .scrollE img{
+    width: 20px;
+    height: 20px;
+   }
+
+   .button{
+    width: 200px;
+    height: 40px;
+    font-size: 14px;
+   }
+
+   .cakeButton{
+    width: 90%;
+    height: 50px;
+   }
+   #envelope{
+    width: 80%;
+    border-radius: 20px;
+   }
+
+   .close{
+    background-image: url(closed\ envelope.jpg);
+    background-size: cover;
+    background-position: -130px;
+    }
+    
+    .entext{
+        margin-bottom: 110px;
+    }
+
+    .giftText{
+        width: 250px;
+        height: 400px;
+        left: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin-top: 400px;
+      }
+
+      #giftButton{
+        left: 122px;
+        bottom: 100px;
+        width: 50px;
+        height: 35px;
+        font-size: 14px;
+        text-align: center;
+
+      }  
+
+      .present{
+        height: 350px;
+        width:300px;
+        margin-top: 65px;
+       }
+}
+
+
+@media (min-width : 377px) and (max-width : 384px) and (max-height : 610px) {
+    .picture{
+        width: 90%;
+        height: 90%;
+    }
+
+    .text{
+        width: 70%;
+        height: 50%;
+    }
+    
+    .scrollD{
+        font-size: 16px;
+        bottom: 10px;
+    }
+
+    .scrollD img{
+        width: 16px;
+        height: 16px;
+    }
+
+    #envelope{
+        width: 80%;
+        border-radius: 20px;
+    }
+
+    .close{
+        background-image: url(closed\ envelope.jpg);
+        background-size: cover;
+        background-position: -150px;
+    }
+
+    .button{
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .entext{
+        font-size: 16px;
+        width: 200px;
+        height: 410px;
+        margin-top: 100px;
+    }
+
+    .scrollE{
+        margin-right: 1000px;
+        margin-bottom: 250px;
+    }
+
+    .scrollE img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .giftText{
+        width: 250px;
+        height: 400px;
+        left: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin-top: 400px;
+    }
+
+    #giftButton{
+        left: 109px;
+        bottom: 100px;
+        width: 50px;
+        height: 35px;
+        font-size: 14px;
+        text-align: center;
+      }  
+
+      .present{
+        height: 350px;
+        width:300px;
+        margin-top: 65px;
+      }
+
+}
+
+
+@media (min-width : 384px) and (max-width : 394px) and (max-height : 610px) {
+    .picture{
+        width: 90%;
+        height: 90%;
+    }
+
+    .text{
+        width: 70%;
+        height: 50%;
+    }
+    
+    .scrollD{
+        font-size: 16px;
+        bottom: 10px;
+    }
+
+    .scrollD img{
+        width: 16px;
+        height: 16px;
+    }
+
+    #envelope{
+        width: 80%;
+        border-radius: 20px;
+    }
+
+    .close{
+        background-image: url(closed\ envelope.jpg);
+        background-size: cover;
+        background-position: -150px;
+    }
+
+    .button{
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .entext{
+        font-size: 16px;
+        width: 200px;
+        height: 410px;
+        margin-top: 100px;
+    }
+
+    .scrollE{
+        margin-right: 1000px;
+        margin-bottom: 250px;
+    }
+
+    .scrollE img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .giftText{
+        width: 250px;
+        height: 400px;
+        left: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin-top: 400px;
+    }
+
+    #giftButton{
+        left: 112px;
+        bottom: 100px;
+        width: 50px;
+        height: 35px;
+        font-size: 14px;
+        text-align: center;
+      }  
+
+      .present{
+        height: 350px;
+        width:300px;
+        margin-top: 65px;
+      }
+
+}
+
+
+@media (min-width : 394px) and (max-width : 410px) and (max-height : 610px) {
+    .picture{
+        width: 90%;
+        height: 90%;
+    }
+
+    .text{
+        width: 70%;
+        height: 50%;
+    }
+    
+    .scrollD{
+        font-size: 16px;
+        bottom: 10px;
+    }
+
+    .scrollD img{
+        width: 16px;
+        height: 16px;
+    }
+
+    #envelope{
+        width: 80%;
+        border-radius: 20px;
+    }
+
+    .close{
+        background-image: url(closed\ envelope.jpg);
+        background-size: cover;
+        background-position: -150px;
+    }
+
+    .button{
+        height: 40px;
+        font-size: 12px;
+    }
+
+    .entext{
+        font-size: 16px;
+        width: 200px;
+        height: 410px;
+        margin-top: 100px;
+    }
+
+    .scrollE{
+        margin-right: 1000px;
+        margin-bottom: 250px;
+    }
+
+    .scrollE img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .giftText{
+        width: 250px;
+        height: 400px;
+        left: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        margin-top: 400px;
+    }
+
+    #giftButton{
+        left: 117px;
+        bottom: 100px;
+        width: 50px;
+        height: 35px;
+        font-size: 14px;
+        text-align: center;
+      }  
+
+      .present{
+        height: 350px;
+        width:300px;
+        margin-top: 65px;
+      }
+
+}
+
+
+
+@media (min-width: 847px) and (max-width:857px) and (min-height:1270px) and (max-height:1280px) {
+    .picture{
+        width: 90%;
+        height: 60%
+    }
+    .text{
+        width: 70%;
+        height: 30%;
+    }
+
+    .scrollD{
+        margin-right: 700px;
+        bottom: 40px;
+    }
+
+    .close{
+        background-image: url(closed\ envelope.jpg);
+        background-size: cover;
+        background-position: -500px;
+        }
+
+    #envelope{
+        width: 90%;
+    }    
+
+    .button{
+        margin-top: 800px;
+        height: 55px;
+        font-size: 28px;
+        left: 40px;
+    }
+
+    .open{
+        background-image: url(open\ envelope.jpg);
+        background-size: 1040px 1040px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .entext{
+        font-size: 28px;
+        font-weight: 700;
+        width: 500px;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    .cakeButton{
+        width: 90%;
+        font-size: 29px;
+    }
+    #buttoncake{
+        width: 100px;
+        height: 60px;
+        font-size: 32px;
+    }
+
+    .giftText{
+        width: 550px;
+        height: 400px;
+        left: 0px;
+        font-family:Arial, Helvetica, sans-serif;
+        font-size: 29px;
+        margin-top: 400px;
+    }
+    #bdayPresent{
+        font-size: 29px;
+        width: 450px;
+        height: 100px;
+        font-weight: 600;
+    }
+
+  
+    #giftButton{
+        width: 65px;
+        height: 95px;
+        font-size: 20px;
+      
+    }
+
+    
+    .present{
+        height: 750px;
+        width:700px;
+        margin-top: 265px;
+      }
+}
+
+
+@media (min-width:720px) and (max-width:720px) and (min-height:1600px) and (max-height:1600px) {
+    .picture{
+        width: 95%;
+    }
+    
+}
